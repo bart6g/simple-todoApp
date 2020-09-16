@@ -1,0 +1,60 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.primary {
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  transform: translate(-50%, -50%);
+  height: 34px;
+  width: 120px;
+  border: none;
+  border-radius: 32px;
+  color: white;
+  background-color: transparent;
+  transition: all 0.3s ease;
+  font-weight: 700;
+  font-family: sans-serif;
+  &:hover {
+    transform: translate(-50%, -50%) translateY(-5px);
+  }
+}
+
+.secondary {
+  width: 46px;
+  height: 46px;
+  border-radius: 50%;
+  border: none;
+  color: white;
+  position: relative;
+  transition: all 0.3s ease;
+
+  &:hover {
+    transform: translateY(-5px);
+  }
+}
+
+.line {
+  width: 40px;
+  height: 5px;
+  background-color: white;
+  position: absolute;
+  left: 3px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+  transform: translate(0, -50%);
+}
+
+.first {
+  top: 50%;
+  transform: translate(0, -50%) rotate(90deg);
+
+  //   position: absolute;
+  //   left: 4px;
+}

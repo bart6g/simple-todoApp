@@ -1,0 +1,85 @@
+.container {
+  width: 350px;
+  height: 500px;
+  background-color: #eee;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  visibility: hidden;
+  -webkit-box-shadow: 10px 11px 30px -10px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 10px 11px 30px -10px rgba(0, 0, 0, 0.75);
+  box-shadow: 10px 11px 30px -10px rgba(0, 0, 0, 0.75);
+  color: white;
+}
+
+.opened {
+  visibility: visible !important;
+}
+
+.close {
+  position: absolute;
+  top: 25px;
+  right: 25px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.line {
+  position: absolute;
+  width: 35px;
+  height: 3px;
+
+  background-color: white;
+}
+
+.first {
+  transform: rotate(45deg);
+}
+.second {
+  transform: rotate(-45deg);
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 50px;
+}
+.pair {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 10px;
+}
+
+.input {
+  width: 280px;
+  padding: 10px;
+  margin: 10px;
+}
+
+textarea {
+  height: 200px;
+}
+
+.submit {
+  background-color: transparent;
+  margin-top: 20px;
+  width: 280px;
+  height: 32px;
+  border: 2px solid white;
+  color: white;
+  cursor: pointer;
+
+  transition: transform 0.3s ease;
+
+  &:hover {
+    transform: translateY(-5px);
+  }
+}

@@ -1,0 +1,47 @@
+.container {
+  height: calc(100vh - 125px);
+  background-color: #eee;
+}
+
+.content {
+  max-width: 1350px;
+  height: 100%;
+  margin: 0 auto;
+  background-color: #ee4540;
+}
+
+.navLinks {
+  max-width: 500px;
+  margin: 0 auto;
+  //   background-color: red;
+  padding: 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  li {
+    list-style: none;
+
+    button {
+      //   background-color: blue;
+      color: white;
+      border-radius: 32px;
+      display: flex;
+      width: 120px;
+      height: 34px;
+      justify-content: center;
+      align-items: center;
+      text-decoration: none;
+      font-size: 18px;
+      border: none;
+      cursor: pointer;
+      outline: none;
+      //   margin-right: 50px;
+    }
+  }
+}
+
+.list {
+  max-width: 1000px;
+  margin: 0 auto;
+}

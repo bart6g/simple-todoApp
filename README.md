@@ -1,3 +1,5 @@
+Simple todoAPP was written with React and styled with Sass. It's possible to change the theme by button. Last commit will contain utilization of local storage.
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
