@@ -2,43 +2,43 @@ import React, { useState, createContext } from "react";
 import { v4 as uuidv4 } from "uuid";
 export const TaskContext = createContext();
 
-const initialTasks = [
-  {
-    id: uuidv4(),
-    title: "Task1",
-    added: new Date(),
-    desc:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis voluptates, dolores quo vel veniam officia dolorum reprehenderit minus mollitia, illo consectetur sit quidem, magnam quos quisquam. Atque, blanditiis. Officiis, debitis!",
-    done: false,
-  },
-  {
-    id: uuidv4(),
-    title: "Task2",
-    added: new Date(),
-    desc:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis voluptates, dolores quo vel veniam officia dolorum reprehenderit minus mollitia, illo consectetur sit quidem, magnam quos quisquam. Atque, blanditiis. Officiis, debitis!",
-    done: false,
-  },
-  {
-    id: uuidv4(),
-    title: "Task3",
-    added: new Date(),
-    desc:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis voluptates, dolores quo vel veniam officia dolorum reprehenderit minus mollitia, illo consectetur sit quidem, magnam quos quisquam. Atque, blanditiis. Officiis, debitis!",
-    done: true,
-  },
-  {
-    id: uuidv4(),
-    title: "Task4",
-    added: new Date(),
-    desc:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis voluptates, dolores quo vel veniam officia dolorum reprehenderit minus mollitia, illo consectetur sit quidem, magnam quos quisquam. Atque, blanditiis. Officiis, debitis!",
-    done: false,
-  },
-];
+// const initialTasks = [
+//   {
+//     id: uuidv4(),
+//     title: "Task1",
+//     added: new Date(),
+//     desc:
+//       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis voluptates, dolores quo vel veniam officia dolorum reprehenderit minus mollitia, illo consectetur sit quidem, magnam quos quisquam. Atque, blanditiis. Officiis, debitis!",
+//     done: false,
+//   },
+//   {
+//     id: uuidv4(),
+//     title: "Task2",
+//     added: new Date(),
+//     desc:
+//       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis voluptates, dolores quo vel veniam officia dolorum reprehenderit minus mollitia, illo consectetur sit quidem, magnam quos quisquam. Atque, blanditiis. Officiis, debitis!",
+//     done: false,
+//   },
+//   {
+//     id: uuidv4(),
+//     title: "Task3",
+//     added: new Date(),
+//     desc:
+//       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis voluptates, dolores quo vel veniam officia dolorum reprehenderit minus mollitia, illo consectetur sit quidem, magnam quos quisquam. Atque, blanditiis. Officiis, debitis!",
+//     done: true,
+//   },
+//   {
+//     id: uuidv4(),
+//     title: "Task4",
+//     added: new Date(),
+//     desc:
+//       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis voluptates, dolores quo vel veniam officia dolorum reprehenderit minus mollitia, illo consectetur sit quidem, magnam quos quisquam. Atque, blanditiis. Officiis, debitis!",
+//     done: false,
+//   },
+// ];
 
 const TaskContextProvider = (props) => {
-  const [tasks, setTasks] = useState(initialTasks);
+  const [tasks, setTasks] = useState([]);
   const [isModalOpen, setModal] = useState(false);
 
   const deleteTask = (id) => {
