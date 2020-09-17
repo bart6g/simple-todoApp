@@ -45,6 +45,7 @@ const Modal = () => {
             className={styles.input}
             value={title}
             onChange={(e) => setTitle(e.target.value)}
+            required
           />
         </div>
         <div className={styles.pair}>
@@ -55,6 +56,7 @@ const Modal = () => {
             className={styles.input}
             value={desc}
             onChange={(e) => setDesc(e.target.value)}
+            required
           />
         </div>
         <input

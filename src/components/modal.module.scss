@@ -19,9 +19,12 @@
 
 .close {
   position: absolute;
-  top: 25px;
-  right: 25px;
+  top: 10px;
+  right: 10px;
   display: flex;
+
+  width: 35px;
+  height: 35px;
   flex-direction: column;
   justify-content: center;
   align-items: center;
